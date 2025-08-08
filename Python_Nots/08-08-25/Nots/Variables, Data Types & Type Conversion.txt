@@ -158,9 +158,9 @@ Two Types of Type Conversion:
 
 Example:
 
-    x = 5       # int
-    y = 2.0     # float
-    z = x + y   # int + float → float
+    x = 5            # int
+    y = 2.0          # float
+    z = x + y        # int + float → float
 
     print(z)         # 7.0
     print(type(z))   # <class 'float'>
