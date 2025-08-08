@@ -1,0 +1,132 @@
+Basic I/O (print, input):
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+1. Output: print():
+    
+    The print() function displays text or variables to the screen.
+
+Syntax:
+
+    print(object1, object2, ..., sep=' ', end='\n')
+
+Examples:
+
+    print("Hello, World!")               # prints a string
+    print(5 + 3)                         # prints result of expression: 8
+    print("Name:", "Alice")              # multiple values with default separator (space)
+    print("Hello", end='!')              # custom end character (no newline)
+
+2. Input: input():
+    
+    The input() function reads a line of text from the user (as a string).
+
+Syntax:
+
+    variable = input("Prompt message")
+
+Examples:
+    
+    name = input("Enter your name: ")
+    print("Hello,", name)
+    
+    age = input("Enter your age: ")
+    print("You are", age, "years old")
+
+Note:
+
+All input is returned as a string, so if you need numbers, convert them:
+
+    age = int(input("Enter your age: "))          # convert to integer
+    height = float(input("Enter your height: "))  # convert to float
+
+Simple Program Example:
+
+    name = input("What is your name? ")
+    print("Nice to meet you,", name)
+
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    print("The sum is:", num1 + num2)
+_________________________________________________________________________________________________________________________________________________________________
+
+
+Strings Basic:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is a String?
+
+    A string is a sequence of characters.
+
+Examples of strings:
+    
+    s1 = "Hello"
+    s2 = 'Python'
+    s3 = """Triple-quoted
+    string with multiple lines."""
+
+Creating Strings:
+
+You can use:
+
+    Single quotes: 'hello'
+    Double quotes: "hello"
+    Triple quotes: '''hello''' or """hello""" (for multi-line strings)
+
+Example:
+
+    msg = "I'm learning Python"     # double quotes handle single quote inside
+
+Common String Operations:
+
+1. Concatenation (+):
+
+    a = "Hello"
+    b = "World"
+    print(a + " " + b)       # Output: Hello World
+
+2. Repetition (*):
+
+    print("Hi " * 3)         # Output: Hi Hi Hi 
+
+3. Indexing (starts at 0):
+
+    text = "Python"
+    print(text[0])           # Output: P
+    print(text[-1])          # Output: n (last character)
+
+4. Slicing (string[start:end]):
+
+    print(text[0:3])         # Output: Pyt (0 to 2)
+    print(text[:4])          # Output: Pyth
+    print(text[2:])          # Output: thon
+
+String Methods (Functions):
+
+Example:
+
+    s = "  Hello World  "
+
+    print(s.lower())                        # '  hello world  '
+    print(s.upper())                        # '  HELLO WORLD  '
+    print(s.strip())                        # 'Hello World' (removes spaces)
+    print(s.replace("World", "Python"))     # '  Hello Python  '
+    print(s.split())                        # ['Hello', 'World']
+    print(len(s))                           # 15 (includes spaces)
+
+f-Strings (String Interpolation):
+
+Example:
+
+    name = "Alice"
+    age = 25
+    print(f"My name is {name} and I am {age} years old.")
+
+Escape Characters:
+
+    | Escape | Meaning      |
+    | ------ | ------------ |
+    | `\n`   | New line     |
+    | `\t`   | Tab          |
+    | `\\`   | Backslash    |
+    | `\'`   | Single quote |
+    | `\"`   | Double quote |

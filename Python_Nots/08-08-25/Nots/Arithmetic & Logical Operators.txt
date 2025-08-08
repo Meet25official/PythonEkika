@@ -1,0 +1,40 @@
+Arithmetic & Logical Operators:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arithmetic Operators:
+
+    Used for basic mathematical calculations.
+
+    | Operator | Description            | Example  | Result |
+    | -------- | ---------------------- | -------- | ------ |
+    | `+`      | Addition               | `5 + 2`  | `7`    |
+    | `-`      | Subtraction            | `5 - 2`  | `3`    |
+    | `*`      | Multiplication         | `5 * 2`  | `10`   |
+    | `/`      | Division (float)       | `5 / 2`  | `2.5`  |
+    | `//`     | Floor Division         | `5 // 2` | `2`    |
+    | `%`      | Modulus (remainder)    | `5 % 2`  | `1`    |
+    | `**`     | Exponentiation (power) | `5 ** 2` | `25`   |
+
+Logical Operators:
+
+    Used to combine conditional statements (booleans).
+
+    | Operator | Description                                      | Example          | Result  |
+    | -------- | ------------------------------------------------ | ---------------- | ------- |
+    | `and`    | Returns `True` if both operands are `True`       | `True and False` | `False` |
+    | `or`     | Returns `True` if at least one operand is `True` | `True or False`  | `True`  |
+    | `not`    | Reverses the logical state                       | `not True`       | `False` |
+
+Example:
+
+    a = 10
+    b = 5
+
+    # Arithmetic
+    print(a + b)   # 15
+    print(a % b)   # 0
+
+    # Logical
+    print(a > 5 and b < 10)   # True
+    print(a < 5 or b < 10)    # True
+    print(not(a == b))        # True
