@@ -1,0 +1,214 @@
+Variables:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    variables are used to store data and modified throughout your code.
+
+1. Creating Variables: 
+
+    You assign a value to a variable using the = operator.
+
+Example:
+
+    name = "Alice"
+    age = 30
+    is_student = True
+
+2. Variable Naming Rules:
+
+Variable names:
+    
+    use : letters, digits, and underscores( _ ).
+    start : a letter or underscore, not a digit.
+    case-sensitive : age and Age are different
+
+Example:
+
+Valid:
+
+    user_name = "Bob"
+    _age = 25
+    score1 = 90
+
+ Invalid:
+
+    1score = 90         # Starts with a digit
+    user-name = "Eve"   # Hyphens not allowed
+
+
+3. Dynamic Typing:
+
+    meaning you don't need to declare the type.
+
+Example:
+
+    x = 10          # int
+    x = "hello"     # now it's a str
+    x = 3.14        # now it's a float
+
+4. Multiple Assignments:
+    
+    assign multiple variables in one line.
+    Or assign the same value to multiple variables.
+
+Example:
+
+    a, b, c = 1, 2, 3
+    x = y = z = 100
+
+5. Variable Types:
+
+    name = "Alice"           # str
+    age = 25                 # int
+    height = 5.7             # float
+    is_student = False       # bool
+    colors = ["red", "blue"] # list
+
+6. Check a Variable's Type:
+
+    Use type() to find the data type.
+
+Example:
+
+    x = 42
+    print(type(x))  # <class 'int'>
+_________________________________________________________________________________________________________________________________________________________________
+
+
+Data Types:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    data types define what kind of value a variable holds.
+    Python has several built-in data types.
+
+1. Basic Data Types:
+
+    | Type       | Example           | Description             |
+    | ---------- | ----------------- | ----------------------- |
+    | `int`      | `x = 10`          | Whole numbers           |
+    | `float`    | `y = 3.14`        | Decimal numbers         |
+    | `str`      | `name = "Alice"`  | Text (strings)          |
+    | `bool`     | `is_valid = True` | Boolean (True or False) |
+    | `NoneType` | `x = None`        | Represents "no value"   |
+
+2. Sequence Types:
+
+    | Type    | Example                    | Description                       |
+    | ------- | -------------------------- | --------------------------------- |
+    | `list`  | `colors = ["red", "blue"]` | Ordered, changeable list          |
+    | `tuple` | `point = (10, 20)`         | Ordered, unchangeable (immutable) |
+    | `range` | `range(0, 5)`              | Sequence of numbers               |
+
+3. Text Type:
+
+    str: String type (sequence of characters).
+
+Example:
+
+    message = "Hello, world!"
+
+4. Set Types:
+
+    | Type        | Example                    | Description                |
+    | ----------- | -------------------------- | -------------------------- |
+    | `set`       | `nums = {1, 2, 3}`         | Unordered, no duplicates   |
+    | `frozenset` | `fset = frozenset([1, 2])` | Immutable version of a set |
+
+5. Mapping Type:
+
+    dict: Dictionary – key-value pairs.
+
+Example:
+    
+    person = {"name": "Meet", "age": 22}
+
+6. Binary Types:
+
+    | Type         | Example                    | Description         |
+    | ------------ | -------------------------- | ------------------- |
+    | `bytes`      | `b = b"hello"`             | Immutable bytes     |
+    | `bytearray`  | `b = bytearray([65, 66])`  | Mutable bytes       |
+    | `memoryview` | `m = memoryview(b"hello")` | View of binary data |
+
+7. Type Checking & Conversion:
+
+Check a type:
+
+    x = 5
+    print(type(x))  # <class 'int'>
+
+Convert types:
+
+    int("10")      # 10
+    float("3.14")  # 3.14
+    str(123)       # "123"
+    list("abc")    # ['a', 'b', 'c']
+_________________________________________________________________________________________________________________________________________________________________
+
+
+Type Conversion:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    type conversion refers to converting one data type to another. 
+
+Two Types of Type Conversion:
+
+1. Implicit Type Conversion (Automatic):
+
+    Python automatically converts data types.
+
+Example:
+
+    x = 5       # int
+    y = 2.0     # float
+    z = x + y   # int + float → float
+
+    print(z)         # 7.0
+    print(type(z))   # <class 'float'>
+
+2. Explicit Type Conversion (Type Casting):
+
+    You manually convert data types using built-in functions.
+
+Common Conversion Functions:
+
+    | Function  | Converts To           |
+    | --------- | --------------------- |
+    | `int()`   | Integer               |
+    | `float()` | Floating-point number |
+    | `str()`   | String                |
+    | `bool()`  | Boolean               |
+    | `list()`  | List                  |
+    | `tuple()` | Tuple                 |
+    | `set()`   | Set                   |
+
+Examples of Type Casting:
+
+String → Integer
+
+    num_str = "123"
+    num_int = int(num_str)
+    print(num_int + 10)  # 133
+
+Float → Integer (Truncates decimal)
+
+    f = 3.99
+    i = int(f)
+    print(i)  # 3
+
+Integer → String
+
+    age = 25
+    age_str = str(age)
+    print("Age is " + age_str)  # Age is 25
+
+List → Set
+
+    fruits = ["apple", "banana", "apple"]
+    unique_fruits = set(fruits)
+    print(unique_fruits)  # {'banana', 'apple'}
+
+Not all conversions are valid:
+
+    int("hello")  #  ValueError
+    float("abc")  #  ValueError
+
