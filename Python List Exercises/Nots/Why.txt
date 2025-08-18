@@ -1,0 +1,78 @@
+Why?
+---------------------------------------------------------------
+Flatten a Deeply Nested List
+
+ETL : Extract   Transform   Load
+
+    -> a set of automated processes that extract data from various sources, transform it into a usable format, and load it into a target system like a data warehouse.
+    
+    -> is crucial for preparing data for analysis, business intelligence, and other data-driven applications.
+
+
+JSON parsing : (JSON) JavaScript Object Notation
+
+    -> the process of converting data in JSON format from a string into a data structure that a computer program can easily use, like a JavaScript object. 
+
+How is JSON parsed?
+
+    Most programming languages have built-in functions or libraries for parsing JSON. 
+
+    -> JavaScript: The JSON.parse() method is used to parse JSON strings into JavaScript objects. 
+
+    -> Python: The json.loads() function (and json.load() for file objects) is used to parse JSON strings into Python dictionaries. 
+
+    -> Java: Java has various libraries like Jackson or Gson for parsing JSON. 
+
+
+Recursive DOM traversal : 
+    
+    -> DOM traversal in Python involves defining a function that processes a given DOM node and then recursively calls itself for each of the node's children.
+
+    -> This approach is particularly useful for tasks like searching for specific elements, modifying content, or extracting data from a complex HTML structure.
+
+---------------------------------------------------------------
+Group Consecutive Duplicates
+
+Run-length encoding : RLE 
+
+    -> a simple, lossless data compression technique that reduces the size of data by replacing consecutive sequences of identical data values (called "runs") with a single instance of that value and a count of its consecutive occurrences.
+
+How it Works :
+
+    -> Identify Runs :  The algorithm scans the data, identifying sequences where the same data element appears repeatedly.
+
+    -> Replace with Count and Value :   Instead of storing each individual instance of the repeating element, RLE replaces the entire run with a pair: the count of repetitions and the data value itself.
+
+
+Log event grouping :
+
+    -> the process of organizing and categorizing log messages based on shared characteristics, such as source, type, or time, to facilitate analysis and troubleshooting. 
+
+    -> This can be achieved by grouping logs within a log management system, like CloudWatch, or by using tools like Windows Event Viewer to filter and sort events.
+
+Real-time batching by last-seen state :
+
+    -> "real-time batching by last-seen state," it usually refers to a scenario where data is being processed in real-time streams, but instead of processing each individual event as it arrives, we accumulate events into small batches based on the last known state of a particular entity or context.
+
+--------------------------------------------------------------------------------------
+Rotate List (Bidirectional) k Times
+
+Common in buffer management, scheduling, circular data structures : 
+
+buffer management : 
+
+    -> a technique used in computer systems to efficiently manage the movement and storage of data in memory (buffers). 
+
+    -> It's crucial for performance optimization, especially in systems like databases and communication protocols, where minimizing slower disk or network I/O is vital. 
+
+scheduling :
+
+    -> Scheduling in Python refers to automating the execution of tasks or functions at predetermined times or intervals. 
+
+    -> This is crucial for various applications, such as system monitoring, data fetching, report generation, and more.
+
+circular data structures :
+
+    -> Circular data structures are a class of data structures where the last element points back to the first element, forming a continuous loop. 
+
+    -> This eliminates the concept of a "null" or "end" pointer, allowing for seamless traversal and efficient resource management in certain applications.

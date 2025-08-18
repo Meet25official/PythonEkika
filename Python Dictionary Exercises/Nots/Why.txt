@@ -1,0 +1,7 @@
+NLP :
+
+    -> The most used terms in Natural Language Processing (NLP) with Python often refer to both fundamental concepts and specific techniques or libraries commonly employed.
+
+telemetry :
+
+    -> an observability framework – an API, SDK, and tools that are designed to aid in the generation and collection of application telemetry data such as metrics, logs, and traces.
